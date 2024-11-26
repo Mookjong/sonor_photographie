@@ -1,0 +1,24 @@
+{
+  "name": "sonor_photographie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w ./sass/main.scss:static/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mookjong/sonor_photographie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mookjong/sonor_photographie/issues"
+  },
+  "homepage": "https://github.com/Mookjong/sonor_photographie#readme",
+  "devDependencies": {
+    "sass": "^1.81.0"
+  }
+}

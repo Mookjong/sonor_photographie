@@ -1,0 +1,87 @@
+.about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 3.75em 9% 0;
+  
+    &__info {
+      h1 {
+        font-size: 3.45rem;
+      }
+  
+      h2 {
+        font-size: 2rem;
+        margin-top: -0.625em;
+      }
+  
+      p {
+        font-size: 1rem;
+        margin: 0.8em 0 1.55em;
+      }
+    }
+  
+    &__img {
+  
+      &-box {
+          width: 32vw;
+          height: 32vw;
+          // background-color: red;
+          border-radius: 50%;
+      }
+  
+      &-item {
+          background-color: slateblue;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+      }
+    }
+  }
+  
+  .btn-sci {
+    display: flex;
+    align-items: center;
+  
+    // class .btn from youtube video
+    &__cv {
+      display: inline-block;
+      padding: 0.625em 1.875em;
+      background-color: $clr-secondary;
+      border: 2px solid $clr-secondary;
+      border-radius: 2.5em;
+      box-shadow: 0 0 0.875em $clr-secondary;
+  
+      font-size: 1rem;
+      color: $clr-background;
+      font-weight: 700;
+      transition: $transition;
+  
+      &:hover {
+        background-color: transparent;
+        color: $clr-secondary;
+        box-shadow: none;
+      }
+    }
+
+  
+    &__sci {
+      margin-left: 1.4em;
+  
+      a {
+          display: inline-flex;
+          padding: .5em;
+          border: 2px solid $clr-secondary;
+          border-radius: 50%;
+          font-size: 1.25rem;
+          color: $clr-secondary;
+          margin: 0 .5em;
+          transition: $transition;
+  
+          &:hover {
+              background-color: $clr-secondary;
+              color: $clr-background;
+              box-shadow: 0 0 10px $clr-secondary;
+          }
+      }
+    }
+  }

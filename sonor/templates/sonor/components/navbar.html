@@ -1,0 +1,14 @@
+{% load static %}
+
+<nav class="navbar">
+    <a href="{% url 'sonor:home' %}" class="logo">
+        <!-- <img src="{% static 'assets/logo.svg' %}" alt="Logo"> -->
+        Sonor Photographie
+    </a>
+    <ul>
+        <li class="{% if current_page == 'home' %}active{% endif %}"><a href="{% url 'sonor:home' %}">Accueil</a></li>
+        <li class="{% if current_page == 'portfolio' %}active{% endif %}"><a href="{% url 'sonor:portfolio' %}">Gallerie</a></li>
+        <li class="{% if current_page == 'about' %}active{% endif %}"><a href="{% url 'sonor:about' %}">A propos</a></li>
+        <li class="{% if current_page == 'contact' %}active{% endif %}"><a href="{% url 'sonor:contact' %}">Contact</a></li>
+    </ul>
+</nav>

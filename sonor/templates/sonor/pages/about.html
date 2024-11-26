@@ -1,0 +1,29 @@
+{% extends 'sonor/layouts/main.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="about">
+        <div class="about__info">
+            <h1>Benoit Sthorez</h1>
+            <h2>Sonor Photographie</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint facilis eos harum aliquid libero possimus, quis accusantium, saepe hic ullam cumque. Maiores ratione eveniet facilis nihil quaerat tenetur modi assumenda.</p>
+            <div class="btn-sci">
+                <a class="btn-sci__cv" href="{% static 'documents/fake_cv.jpg' %}" target="_blank">Download CV</a>
+                <div class="btn-sci__sci">
+                    <a href=""><i class='bx bxl-github' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin' ></i></a>
+                    <a href=""><i class='bx bxl-twitter' ></i></a>
+                    <a href=""><i class='bx bxl-youtube' ></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__img">
+            <div class="about__img-box">
+                <div class="about__img-item">
+                    {# <img src="{% static 'images/photo.jpg' %}" alt="Photo"> #}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
