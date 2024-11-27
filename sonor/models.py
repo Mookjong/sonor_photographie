@@ -24,7 +24,7 @@ class Image(models.Model):
 
     image = models.ImageField(
         # images will be uploaded to /media/uploads/products
-        upload_to="uploads/products/"
+        upload_to="uploads/images/"
     )
 
     tags = models.ManyToManyField(
